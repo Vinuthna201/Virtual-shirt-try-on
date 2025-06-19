@@ -1,0 +1,360 @@
+:root {
+    --primary: #6366F1;
+    --primary-dark: #4F46E5;
+    --secondary: #10B981;
+    --accent: #F59E0B;
+    --background: #F8FAFC;
+    --text-dark: #1F2937;
+    --text-light: #F3F4F6;
+    --gradient-1: linear-gradient(135deg, #6366F1, #4F46E5);
+    --gradient-2: linear-gradient(135deg, #10B981, #059669);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+nav {
+    background: var(--gradient-1);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.demo-button, .cta-primary {
+    background: var(--accent);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.demo-button:hover, .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background: #F97316;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: var(--text-dark);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cta-secondary {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.about-section {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-shape {
+    width: 300px;
+    height: 300px;
+    background: var(--gradient-2);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    text-align: center;
+    padding: 2rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
+}
+
+section {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+#approach ul {
+    list-style: disc;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.approach-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f6f9fe 0%, #f1f4f8 100%);
+}
+
+.approach-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2d3748;
+}
+
+.approach-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.approach-step {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.approach-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.approach-step h3 {
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.approach-step p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.diagram-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.diagram-section h3 {
+    color: #2d3748;
+    margin-bottom: 30px;
+}
+
+.diagram-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.diagram-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.diagram-card:hover {
+    transform: translateY(-5px);
+}
+
+.diagram-card h4 {
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.diagram-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.diagram-card p {
+    color: #4a5568;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .diagram-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .diagram-card {
+        width: 90%;
+    }
+}
+
+/* Remove the previously added styles for #diagram link and replace with these */
+.nav-content ul li a[href="#diagram"] {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-content ul li a[href="#diagram"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}

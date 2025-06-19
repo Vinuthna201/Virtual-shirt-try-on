@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On System - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>Virtual Shirt Try-On</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#diagram">Block Diagram</a></li>
+                <li><button class="demo-button" id="tryDemo">Try Demo</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Transform Your Shopping Experience</h2>
+            <p class="hero-text">Experience the future of fashion with our AI-powered virtual shirt try-on technology. Try shirts instantly, make confident purchases, and revolutionize your shopping journey.</p>
+            <div class="cta-buttons">
+                <button class="cta-primary" id="startTryOn">Try Demo</button>
+                <a href="#about" class="cta-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-shape"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Revolutionizing Online Shopping</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👕</div>
+                <h3>Smart Fitting Technology</h3>
+                <p>Our advanced AI algorithms ensure perfect virtual fit by analyzing your body measurements in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Precise Measurements</h3>
+                <p>Get accurate size recommendations based on real-time body tracking and garment dimensions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Real-Time Preview</h3>
+                <p>See how clothes look on you instantly with our seamless virtual try-on experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👋</div>
+                <h3>Gesture Controls</h3>
+                <p>Intuitive hand gestures let you browse and adjust clothing effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="approach" class="approach-section">
+        <h2>Our Innovative Approach</h2>
+        <div class="approach-container">
+            <div class="approach-step">
+                <div class="step-number">1</div>
+                <h3>Body Detection</h3>
+                <p>Using advanced computer vision and MediaPipe technology to accurately detect and track your body in real-time.</p>
+            </div>
+            <div class="approach-step">
+                <div class="step-number">2</div>
+                <h3>Garment Mapping</h3>
+                <p>Sophisticated algorithms map clothing items onto your body, maintaining proper proportions and perspective.</p>
+            </div>
+            <div class="approach-step">
+                <div class="step-number">3</div>
+                <h3>Gesture Recognition</h3>
+                <p>Intuitive hand gesture controls allow you to naturally interact with the virtual clothing items.</p>
+            </div>
+            <div class="approach-step">
+                <div class="step-number">4</div>
+                <h3>Real-Time Rendering</h3>
+                <p>Seamless integration of WebSocket technology ensures smooth, real-time updates as you move and try different clothes.</p>
+            </div>
+        </div>
+
+        <div class="diagram-section" id="diagram">
+            <h3>System Overview</h3>
+            <div class="diagram-container">
+                <div class="diagram-card">
+                    <h4>Simple Flow</h4>
+                    <img src="images/simple-flow.png" alt="Simple flow diagram showing input, processing, and output stages" class="diagram-image">
+                    <p>Basic overview of the virtual try-on process</p>
+                </div>
+                <div class="diagram-card">
+                    <h4>Detailed Architecture</h4>
+                    <img src="images/detailed-flow.png" alt="Detailed block diagram showing the complete system architecture" class="diagram-image">
+                    <p>Detailed technical flow of the system</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
